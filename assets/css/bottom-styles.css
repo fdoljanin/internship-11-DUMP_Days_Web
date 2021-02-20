@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "Fuse V.2 Display";
+    src: url("src/FuseV.2Display-Bold.c8091973.otf") format("truetype");
+    font-weight: 500;
+  }
+  
+  :root {
+    --slideshow-width: 948px;
+  }
+  
+  body {
+    background: #f1f3f6;
+  }
+  
+  .break {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .break-top {
+    height: 0px;
+    width: 20px;
+    border-bottom: 3px solid #7a8e94;
+  }
+  
+  .break-year {
+    color: #1a3c44;
+    font-family: "Fuse V.2 Display";
+    font-size: 22px;
+    line-height: 30px;
+    margin: 10px 0 0 0;
+    z-index: 1;
+  }
+  
+  .break-vertical {
+    background-image: linear-gradient(#7a8e94 65%, rgba(0, 0, 0, 0) 0%);
+    background-size: 4px 32px;
+    background-repeat: repeat-y;
+    height: 328px;
+    width: 3px;
+  }
+  
+  .break-rectangle {
+    height: 4px;
+    width: 48px;
+    border-radius: 2px;
+    background-color: #5ec4bc;
+    margin: 0px;
+    position: relative;
+    bottom: 8px;
+  }
+  
+  .break-bottom {
+    width: 20px;
+    height: 20px;
+    background: #7a8e94;
+    border-radius: 50%;
+  }
+  
+  .slideshow-row {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: auto;
+    margin: 10px;
+  }
+  
+  .slideshow-card {
+    display: flex;
+    height: 126px;
+    width: 126px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #f1f3f6;
+    box-shadow: inset 4px 4px 20px 0 rgba(255, 255, 255, 0.5),
+      -30px -30px 80px 0 #ffffff, 30px 30px 80px 0 rgba(55, 84, 170, 0.1);
+  }
+  
+  .slideshow-item {
+    height: 126px;
+  }
+  
+  .slideshow-text {
+    width: 100px;
+    color: #5ec4bc;
+    font-family: "Fuse V.2 Display";
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .slideshow {
+    display: flex;
+    /*width: max-content;*/
+  }
+  
+  .slideshow-photos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    /*width: max-content;*/
+    width: 900px;
+  }
+  
+  .slideshow:nth-of-type(1) {
+    animation: slide1 40s linear infinite;
+  }
+  
+  .slideshow:nth-of-type(2) {
+    animation: slide2 40s linear infinite;
+  }
+  
+  .slides {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  @keyframes slide1 {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(calc(-1 * var(--slideshow-width)));
+    }
+    50.01% {
+      transform: translateX(var(--slideshow-width));
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-2 * var(--slideshow-width)));
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    :root {
+      --slideshow-width: 1368px;
+    }
+    .slideshow-item {
+      height: 194px;
+    }
+    .slideshow-card {
+      width: 194px;
+    }
+    .slideshow-photos {
+      width: 1320px;
+    }
+    .break-vertical {
+      height: 460px;
+    }
+    .slideshow-text {
+      font-size: 20px;
+      width: 100px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+  }
+  
+  @media screen and (min-width: 1440px) {
+    :root {
+      --slideshow-width: 1828px;
+    }
+    .slideshow-item {
+      height: 260px;
+    }
+    .slideshow-card {
+      width: 260px;
+    }
+    .slideshow-photos {
+      width: 1780px;
+    }
+    .break-vertical {
+      height: 605px;
+      width: 4px;
+    }
+    .break-top {
+      border-width: 4px;
+    }
+    .slideshow-row:nth-of-type(1) {
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media screen and (min-width: 1980px) {
+    :root {
+      --slideshow-width: 2145px;
+    }
+    .slideshow-item {
+      height: 302px;
+    }
+    .slideshow-card {
+      width: 302px;
+    }
+    .break-vertical {
+      height: 730px;
+      background-size: 4px 45px;
+    }
+    .slideshow-row:nth-of-type(1) {
+      margin-bottom: 50px;
+    }
+    .slideshow-photos {
+      width: 2080px;
+    }
+    .slideshow-text {
+      font-size: 30px;
+      width: 180px;
+    }
+    .break-year {
+      font-size: 30px;
+    }
+    .break-rectangle {
+      width: 65px;
+      bottom: 8px;
+    }
+  }
+  
