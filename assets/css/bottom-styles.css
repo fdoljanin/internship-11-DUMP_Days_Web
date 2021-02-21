@@ -350,3 +350,114 @@
   }
   
   
+
+.question-title {
+  margin: 0;
+  color: #1A3C44;
+  font-family: "Fuse V.2 Display";
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 38px;
+}
+
+.question-text {
+  margin: 10px 0 20px 0;
+  color: #7A8E94;
+  font-family: "Fuse V.2 Display Regular";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.question-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.question-button {
+  margin: 10px -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 41px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1E88E5;
+  box-shadow: 0 5px 10px 0 rgba(30,136,229,0.25);
+}
+
+.question-option {
+  color: #F1F3F6;
+  font-family: "Fuse V.2 Display";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+.question-button--green {
+  background-color: #5EC4BC;
+}
+
+.question-icon--messenger {
+  height: 20px;
+  margin-right: 8px;
+}
+
+.question {
+  margin: auto;
+  margin-top: 100px;
+  box-sizing: border-box;
+  padding: 30px 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  height: 262px;
+  width: 333px;
+  border-radius: 20px;
+  background-color: #F1F3F6;
+  box-shadow: inset 4px 4px 10px 0 rgba(255,255,255,0.5), -10px -10px 20px 0 #FFFFFF, 10px 10px 20px 0 rgba(55,84,170,0.1);
+}
+
+@media screen and (min-width: 768px){
+  .question {
+    margin-top: 120px;
+    width: 55%;
+    min-width: 600px;
+    height: 140px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 60px;
+    align-items: center;
+  }
+  .question-text {
+    margin: 15px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1980px) {
+  .question {
+  margin-top: 150px;
+  height: 207px;
+  width: 1239px;
+  padding: 0 100px;
+  }
+  .question-title {
+    font-size: 40px;
+  }
+  .question-text {
+    font-size: 20px;
+  }
+  .question-button {
+  height: 46px;
+  width: 202px;
+  margin: 12.5px 0;
+  }
+  .question-option {
+     font-size: 20px;
+  }
+  .question-icon--messenger {
+    height: 24px;
+  }
+}
