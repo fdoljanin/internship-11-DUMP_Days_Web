@@ -122,7 +122,7 @@
   text-align: center;
 }
 
-.schedule-container {
+.schedule__lectures-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -142,7 +142,7 @@
     10px 10px 10px 0 rgba(55, 84, 170, 0.05);
 }
 
-.lecture.basic {
+.lecture--basic {
   flex-direction: row;
   background-color: none;
   box-shadow: none;
@@ -159,7 +159,7 @@
   min-width: 90px;
 }
 
-.lecture__time.green {
+.lecture__time--green {
   color: #5ec4bc;
 }
 
@@ -176,6 +176,7 @@
   margin-bottom: -10px;
   left: 100px;
   width: fit-content;
+  width: -moz-fit-content;
   font-family: "fuseBold";
   font-weight: bolder;
   font-size: 12px;
@@ -225,11 +226,11 @@
   line-height: 18px;
 }
 
-.lecture__name.green {
+.lecture__name--green {
   color: #5ec4bc;
 }
 
-.lecture__name.basic {
+.lecture__name--basic {
   font-size: 14px;
   font-family: "fuseBold";
 }
@@ -390,7 +391,7 @@
     min-width: 120px;
   }
 
-  .lecture__time.basic {
+  .lecture__time--basic {
     margin-top: 25px;
   }
 
@@ -438,13 +439,13 @@
     right: calc(20px - 10%);
   }
 
-  .lecture-container.green::before {
+  .lecture-container--green::before {
     content: url(../images/Strelica-Zelelna.svg);
     position: absolute;
     right: calc(20px - 10%);
   }
 
-  .lecture-container.opened::before {
+  .lecture-container--opened::before {
     transform: rotate(180deg);
   }
 
@@ -461,7 +462,7 @@
     line-height: 24px;
   }
 
-  .lecture__name.basic,
+  .lecture__name--basic,
   .lecture__name--bold {
     font-size: 24px;
   }
