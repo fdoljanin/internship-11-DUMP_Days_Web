@@ -1,4 +1,5 @@
 @import "fonts.css";
+@import "colors.css";
 
 .schedule {
   overflow: hidden;
@@ -12,7 +13,7 @@
 .schedule__header {
   height: 48px;
   width: 172px;
-  color: #1a3c44;
+  color: var(--color-blue);
   font-family: "fuseBold";
   font-size: 28px;
   font-weight: bold;
@@ -31,14 +32,14 @@
   height: 65px;
   width: 80px;
   border-radius: 15px;
-  background-color: #5ec4bc;
+  background-color: var(--color-cyan);
   box-shadow: 10px 10px 20px 0 rgba(55, 84, 170, 0.1),
     -10px -10px 20px 0 rgba(255, 255, 255, 0.8);
 }
 
 .first-day__number {
   margin-top: 10px;
-  color: #f1f3f6;
+  color: var(--color-silver);
   font-size: 20px;
   letter-spacing: 0;
   text-align: center;
@@ -46,7 +47,7 @@
 
 .first-day__text {
   margin-top: -20px;
-  color: #f1f3f6;
+  color: var(--color-silver);
   font-size: 15px;
   letter-spacing: 0;
   text-align: center;
@@ -57,14 +58,14 @@
   height: 65px;
   width: 80px;
   border-radius: 15px;
-  background-color: #f3f5f7;
+  background-color: var(--color-grey-blue);
   box-shadow: 10px 10px 20px 0 rgba(55, 84, 170, 0.05),
     -10px -10px 20px 0 rgba(255, 255, 255, 0.6);
 }
 
 .second-day__number {
   margin-top: 10px;
-  color: #5ec4bc;
+  color: var(--color-cyan);
   font-size: 20px;
   letter-spacing: 0;
   text-align: center;
@@ -72,7 +73,7 @@
 
 .second-day__text {
   margin-top: -20px;
-  color: #5ec4bc;
+  color: var(--color-cyan);
   font-size: 15px;
   letter-spacing: 0;
   text-align: center;
@@ -92,7 +93,7 @@
 .event-types__lectures {
   position: relative;
   z-index: 1;
-  color: #1a3c44;
+  color: var(--color-blue);
   font-size: 15px;
   font-weight: bold;
   line-height: 36px;
@@ -108,12 +109,12 @@
   display: block;
   height: 3px;
   width: 100%;
-  background-color: #5ec4bc;
+  background-color: var(--color-cyan);
 }
 
 .event-types__works,
 .event-types__campfire_talks {
-  color: #7a8e94;
+  color: var(--color-grey);
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 0;
@@ -135,7 +136,7 @@
   margin-bottom: 25px;
   width: 85%;
   border-radius: 12px;
-  background-color: #f1f3f6;
+  background-color: var(--color-silver);
   box-shadow: inset 4px 4px 10px 0 rgba(255, 255, 255, 0.5),
     -10px -10px 10px 0 rgba(255, 255, 255, 0.8),
     10px 10px 10px 0 rgba(55, 84, 170, 0.05);
@@ -153,13 +154,13 @@
 
 .lecture__time {
   margin-left: 10px;
-  color: #7a8e94;
+  color: var(--color-grey);
   font-size: 14px;
   min-width: 90px;
 }
 
 .lecture__time--green {
-  color: #5ec4bc;
+  color: var(--color-cyan);
 }
 
 .lecture-container {
@@ -189,7 +190,7 @@
   display: block;
   height: 3px;
   width: 100%;
-  background-color: #5ec4bc;
+  background-color: var(--color-cyan);
 }
 
 .lecture__active {
@@ -213,20 +214,20 @@
   position: absolute;
   top: -16px;
   left: 15px;
-  color: #d73246;
+  color: var(--color-red);
   font-family: "fuseBold";
   font-size: 12px;
 }
 
 .lecture__name {
-  color: #7a8e94;
+  color: var(--color-grey);
   font-size: 12px;
   width: 100%;
   line-height: 18px;
 }
 
 .lecture__name--green {
-  color: #5ec4bc;
+  color: var(--color-cyan);
 }
 
 .lecture__name--basic {
@@ -257,7 +258,7 @@
 }
 
 .lecture__description--text {
-  color: #1a3c44;
+  color: var(--color-blue);
   font-size: 12px;
   line-height: 18px;
 }
@@ -280,7 +281,7 @@
   z-index: 1;
   text-decoration: none;
   font-weight: bold;
-  color: #1a3c44;
+  color: var(--color-blue);
   font-size: 13px;
 }
 
@@ -292,7 +293,7 @@
   display: block;
   height: 3px;
   width: 100%;
-  background-color: #5ec4bc;
+  background-color: var(--color-cyan);
 }
 
 .arrow-right {
