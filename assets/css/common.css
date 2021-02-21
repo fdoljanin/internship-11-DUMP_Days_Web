@@ -4,4 +4,12 @@
 body {
   background: #f1f3f6;
   margin: 0;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 3000px){
+  body {
+    width: 3000px;
+    margin: auto;
+  }
 }
