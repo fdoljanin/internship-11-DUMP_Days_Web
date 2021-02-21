@@ -461,3 +461,72 @@
     height: 24px;
   }
 }
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 84px;
+  width: 333px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.copyright-text {
+  color: #7A8E94;
+  font-family: "Fuse V.2 Display Regular";
+  font-size: 12px;
+  margin:  0 0 9px 0;
+}
+
+.copyright-logo {
+  margin-top: 6px;
+}
+
+.networks {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.network-logo {
+  margin-left: 25px;
+}
+
+.network-logo--youtube {
+  height: 20px;
+}
+
+.network-logo--instagram {
+  height: 25px;
+}
+
+.network-logo--facebook {
+  height: 26px;
+}
+
+@media screen and (min-width: 768px){
+  footer {
+    width: 100%;
+    max-width: 1241px;
+    height: 36px;
+    margin: 157px auto 75px auto;
+  }
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+ 
+ .copyright-text {
+   font-size: 18px;
+   margin: 0;
+   margin-right: 10px;
+ }
+ 
+ .copyright-logo {
+   height: 46px;
+   margin: 0 0 0 10px;
+ }
+ }
