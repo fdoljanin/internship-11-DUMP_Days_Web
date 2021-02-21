@@ -8,6 +8,7 @@
   align-items: center;
   background-color: rgb(240, 243, 246);
   font-family: "fuseRegular";
+  margin-top: 150px;
 }
 
 .schedule__header {
@@ -327,6 +328,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .schedule {
+    margin-top: 200px;
+  }
+
   .schedule__header {
     font-size: 40px;
     line-height: 48px;

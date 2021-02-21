@@ -1,0 +1,270 @@
+
+@font-face {
+    font-family: "fuseRegular";
+    src: url("../fonts/FuseV.2Display-Regular.otf");
+  }
+  
+@font-face {
+    font-family: "fuseBold";
+    src: url("../fonts/FuseV.2Display-Bold.otf");
+  }
+
+
+.navbar *, .main__header *, .description * {
+    padding: 0;
+    margin: 0;
+    font-family: 'fuseRegular';
+    letter-spacing: 0;
+    color: #1A3C44;
+}
+
+body {
+    background-color: #F1F3F6;
+}
+
+.navbar {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 20px 7% 0 7%;
+}
+
+.navbar ul {
+    display: none;
+    height: 52px;
+    margin: 30px 7%;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar li {
+    font-size: 16px;
+    padding-right: 5%;
+}
+
+.logo-mobile {
+    height: 52.83px;
+    width: 45px;
+}
+
+.logo-desktop {
+    display: none;
+    width: 205px;
+    height: 52px;
+}
+
+.hamburger {
+    border: none;
+    display: flex;
+    height: 16px;
+    width: 35px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+/* 
+.navbar-options {
+    display: block;
+    position:static;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 3;
+} */
+
+.hamburger div {
+    width: 100%;
+    height: 20%;
+    background-color: black;
+}
+
+.main__header {
+    margin-top: 250px;
+    font-family: "fuseRegular";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__header-title {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.highlight {
+    color: #5EC4BC;
+}
+
+.main__header-subtitle {
+    padding: 15px 0;
+    font-size: 14px;
+
+}
+
+.main__header-buttons {
+    margin: 50px;
+}
+
+.main__header-buttons button {
+    border: none;
+    height: 39px;
+    width: 124.11px;
+    border-radius: 10px;
+    background-color: #5EC4BC;
+    box-shadow: 0 5px 10px 0 rgba(39,199,189,0.35);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+.main__header-buttons button:nth-child(1){
+    color: white;
+}
+
+.main__header-buttons button:nth-child(2) {
+    color: #5EC4BC;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.main__header-learn__more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__header-learn__more button{
+    font-size: 13px;
+    border: none;
+    background-color: transparent;
+}
+
+.main__header-learn__more img {
+    width: 30%;
+    height: auto;
+    margin-top: 10%;
+    animation: float 2s infinite;
+    animation-play-state: paused;
+}
+
+.main__header-learn__more:hover img{
+    animation-play-state: running;
+
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 0 7%;
+    margin-top: 200px;
+}
+
+.description-title {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.description p {
+    position: relative;
+    margin-left: 9px;
+    font-size: 14px;
+    top: 66px;
+}
+
+.parenthesis:nth-child(1){
+    position: absolute;
+    top: -20%;
+    left: -5%;
+    rotate: 180deg;
+}
+
+.parenthesis:nth-child(2){
+    position: absolute;
+    bottom: -20%;
+    right: -5%;
+}
+
+.parenthesis {
+    display: inline-block;
+    width: 31px;
+    height: 84px;
+    font-size: 70px;
+    color: #5EC4BC;
+    opacity: 0.3;
+}
+
+
+@media screen and (min-width: 768px) {
+    .logo-mobile, .hamburger {
+        display: none;
+    }
+    .logo-desktop, .navbar ul {
+        display: inline-flex;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .navbar li {
+        font-size: 18px;
+    }
+    .main__header-title br{
+        display: none;
+    }
+    .description-title br {
+        display: none;
+    }
+    }
+
+@media screen and (min-width: 1024px) {
+    .main__header-title {
+        font-size: 50px;
+    }
+    .main__header-subtitle {
+        font-size: 20px;
+    }
+    .main__header-buttons button {
+        height: 46px;
+        width: 144px;
+        font-size: 20px;
+    }
+    .main__header-learn__more button {
+        font-size: 18px;
+    }
+    .description-title {
+        font-size: 80px;
+    }
+    .description p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .parenthesis {
+        font-size: 100px;
+        width: auto;
+        height: auto;
+    }
+    .parenthesis:nth-child(1) {
+        top: 35px;
+        left: -15px;
+    }
+    .parenthesis:nth-child(2) {
+        bottom: 35px;
+        right: -15px;
+    }
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+    50%  {
+        transform: translateY(30%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
