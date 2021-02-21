@@ -4,37 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/schedule-styles.css">
+    <link rel="stylesheet" href="assets/css/common.css">
     <title>Days 2020</title>
   </head>
   <body>
-    <article class="schedule">
-      <h2 class="schedule__header">Raspored</h2>
+    <section class="schedule">
 
-      <div class="days-container">
-        <div class="first-day">
-          <p class="first-day__number">1.</p>
-          <p class="first-day__text">dan</p>
+        <h2 class="schedule__header">Raspored</h2>
+  
+        <div class="days-container">
+          <div class="first-day">
+            <p class="first-day__number">1.</p>
+            <p class="first-day__text">dan</p>
+          </div>
+          <div class="second-day">
+            <p class="second-day__number">2.</p>
+            <p class="second-day__text">dan</p>
+          </div>
         </div>
-        <div class="second-day">
-          <p class="second-day__number">2.</p>
-          <p class="second-day__text">dan</p>
-        </div>
-      </div>
-
-      <div class="event-types">
-        <span class="event-types__lectures">Predavanja</span>
-        <span class="event-types__works">Radionice</span>
-        <span class="event-types__campfire_talks">Campfire talks</span>
-      </div>
-
-      <div class="schedule-container">
-        <div class="lecture basic">
-          <p class="lecture__time basic">10:00-10:20</p>
-          <p class="lecture__name basic">Keynote otvaranje konferencije</p>
+  
+        <div class="event-types">
+          <span class="event-types__lectures">Predavanja</span>
+          <span class="event-types__works">Radionice</span>
+          <span class="event-types__campfire_talks">Campfire talks</span>
         </div>
 
-        <div class="lecture">
+      <section class="schedule__lectures-container">
+        <article class="lecture lecture--basic">
+          <p class="lecture__time lecture__time--basic">10:00-10:20</p>
+          <p class="lecture__name lecture__name--basic">Keynote otvaranje konferencije</p>
+        </article>
+
+        <article class="lecture">
           <p class="lecture__field">Dev</p>
           <div class="lecture-container">
             <p class="lecture__time">10:30-11:15</p>
@@ -46,11 +47,11 @@
               Automobili)
             </p>
           </div>
-        </div>
+        </article>
 
-        <div class="lecture">
+        <article class="lecture">
           <p class="lecture__field">Design</p>
-          <div class="lecture-container opened">
+          <div class="lecture-container lecture-container--opened">
             <p class="lecture__time">11:25-12:10</p>
             <p class="lecture__name">
               <b class="lecture__name--bold"
@@ -80,9 +81,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="lecture">
+        <article class="lecture">
           <p class="lecture__field">Tech</p>
           <div class="lecture-container">
             <p class="lecture__time">12:20-13:20</p>
@@ -96,14 +97,14 @@
               Ericsson Nikola Tesla) i Marin Šaban (Head of R&D at Hattrick)
             </p>
           </div>
-        </div>
+        </article>
 
-        <div class="lecture basic">
-          <p class="lecture__time basic">13:20-13:50</p>
-          <p class="lecture__name basic">Ručak</p>
-        </div>
+        <article class="lecture lecture--basic">
+          <p class="lecture__time lecture__time--basic">13:20-13:50</p>
+          <p class="lecture__name lecture__name--basic">Ručak</p>
+        </article>
 
-        <div class="lecture">
+        <article class="lecture">
           <p class="lecture__field">Dev</p>
           <div class="lecture__active">
             <img
@@ -113,87 +114,87 @@
             <img src="assets/images/Oval-1.svg" class="lecture__active--animation" />
             <p class="lecture__active--text">U TIJEKU</p>
           </div>
-          <div class="lecture-container green">
-            <p class="lecture__time green">13:50-14:35</p>
-            <p class="lecture__name green">
+          <div class="lecture-container lecture-container--green">
+            <p class="lecture__time lecture__time--green">13:50-14:35</p>
+            <p class="lecture__name lecture__name--green">
               <b class="lecture__name--bold"
                 >Upravljanje Dronom koristeći JavaScript i React Native<br
               /></b>
               Demir Selmanović (Software Developer at Toptal)
             </p>
           </div>
-        </div>
+        </article>
 
-        <div class="lecture">
+        <article class="lecture">
           <p class="lecture__field">Tech</p>
-          <div class="lecture-container green">
-            <p class="lecture__time green">14:45-15:30</p>
-            <p class="lecture__name green">
+          <div class="lecture-container lecture-container--green">
+            <p class="lecture__time lecture__time--green">14:45-15:30</p>
+            <p class="lecture__name lecture__name--green">
               <b class="lecture__name--bold"
                 >Biti ili ne biti poduzetnik - pitanje je sad!<br
               /></b>
               Đulijano Nola (CTO at Crno Jaje)
             </p>
           </div>
-        </div>
+        </article>
 
-        <div class="lecture">
+        <article class="lecture">
           <p class="lecture__field">Tech</p>
-          <div class="lecture-container green">
-            <p class="lecture__time green">15:40-16:25</p>
-            <p class="lecture__name green">
+          <div class="lecture-container lecture-container--green">
+            <p class="lecture__time lecture__time--green">15:40-16:25</p>
+            <p class="lecture__name lecture__name--green">
               <b class="lecture__name--bold"
                 >Od studentske klupe do prve produkcije<br
               /></b>
               Toma Zelić (Team Lead at ExtensionEngine)
             </p>
           </div>
-        </div>
+        </article>
 
-        <div class="lecture basic">
-          <p class="lecture__time basic green">16:25-16:40</p>
-          <p class="lecture__name basic green">Pauza</p>
-        </div>
+        <article class="lecture lecture--basic">
+          <p class="lecture__time lecture__time--basic lecture__time--green">16:25-16:40</p>
+          <p class="lecture__name lecture__name--basic lecture__name--green">Pauza</p>
+        </article>
 
-        <div class="lecture">
+        <article class="lecture">
           <p class="lecture__field">Design</p>
-          <div class="lecture-container green">
-            <p class="lecture__time green">16:40-17:25</p>
-            <p class="lecture__name green">
+          <div class="lecture-container lecture-container--green">
+            <p class="lecture__time lecture__time--green">16:40-17:25</p>
+            <p class="lecture__name lecture__name--green">
               <b class="lecture__name--bold"
                 >Od dizajna do proizvoda: Stvaranje iz nepoznatog<br
               /></b>
               Vladimir Končar (Design Team Lead at FIVE)
             </p>
           </div>
-        </div>
+        </article>
 
-        <div class="lecture">
+        <article class="lecture">
           <p class="lecture__field">Dev</p>
-          <div class="lecture-container green">
-            <p class="lecture__time green">17:35-18:20</p>
-            <p class="lecture__name green">
+          <div class="lecture-container lecture-container--green">
+            <p class="lecture__time lecture__time--green">17:35-18:20</p>
+            <p class="lecture__name lecture__name--green">
               <b class="lecture__name--bold"
                 >Tehnička iskustva razvoja globalnog SaaS proizvoda<br
               /></b>
               Domagoj Pavlešić (Founder at Sessionize.com)
             </p>
           </div>
-        </div>
+        </article>
 
-        <div class="lecture">
+        <article class="lecture">
           <p class="lecture__field">Tech</p>
-          <div class="lecture-container green">
-            <p class="lecture__time green">18:30-19:15</p>
-            <p class="lecture__name green">
+          <div class="lecture-container lecture-container--green">
+            <p class="lecture__time lecture__time--green">18:30-19:15</p>
+            <p class="lecture__name lecture__name--green">
               <b class="lecture__name--bold"
                 >Windows 10 virtualizacija - brzo se uči, a još lakše koristi<br
               /></b>
               Ljubo Brodarić (Senior System Engineer at Atos)
             </p>
           </div>
-        </div>
-      </div>
-    </article>
+        </article>
+      </section>
+    </section>
   </body>
 </html>
