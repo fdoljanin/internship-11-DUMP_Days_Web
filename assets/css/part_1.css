@@ -1,13 +1,5 @@
-
-@font-face {
-    font-family: "fuseRegular";
-    src: url("../fonts/FuseV.2Display-Regular.otf");
-  }
-  
-@font-face {
-    font-family: "fuseBold";
-    src: url("../fonts/FuseV.2Display-Bold.otf");
-  }
+@import "fonts.css";
+@import "colors.css";
 
 
 .navbar *, .main__header *, .description * {
@@ -15,11 +7,11 @@
     margin: 0;
     font-family: 'fuseRegular';
     letter-spacing: 0;
-    color: #1A3C44;
+    color: var(--color-blue);
 }
 
 body {
-    background-color: #F1F3F6;
+    background-color: var(--color-silver);
 }
 
 .navbar {
@@ -40,7 +32,7 @@ body {
 }
 
 .navbar li:hover {
-    border-bottom: #5EC4BC 5px solid;
+    border-bottom: var(--color-cyan) 5px solid;
 }
 
 .navbar li {
@@ -85,12 +77,13 @@ body {
 }
 
 .main__header {
-    margin-top: 250px;
+    margin-top: 100px;
     font-family: "fuseRegular";
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    height: calc(100vh - 132px - 100px);
 }
 
 .main__header-title {
@@ -101,7 +94,7 @@ body {
 }
 
 .highlight {
-    color: #5EC4BC;
+    color: var(--color-cyan);
 }
 
 .main__header-subtitle {
@@ -119,7 +112,7 @@ body {
     height: 39px;
     width: 124.11px;
     border-radius: 10px;
-    background-color: #5EC4BC;
+    background-color: var(--color-cyan);
     box-shadow: 0 5px 10px 0 rgba(39,199,189,0.35);
     font-size: 16px;
     font-weight: bold;
@@ -131,7 +124,7 @@ body {
 }
 
 .main__header-buttons button:nth-child(2) {
-    color: #5EC4BC;
+    color: var(--color-cyan);
     background-color: transparent;
     box-shadow: none;
 }
@@ -203,7 +196,7 @@ body {
     width: 31px;
     height: 84px;
     font-size: 70px;
-    color: #5EC4BC;
+    color: var(--color-cyan);
     opacity: 0.3;
 }
 
@@ -271,7 +264,7 @@ body {
         transform: translateY(0);
     }
     50%  {
-        transform: translateY(30%);
+        transform: translateY(-30%);
     }
     to {
         transform: translateY(0);
