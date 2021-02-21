@@ -1,0 +1,488 @@
+@import "fonts.css";
+@import "colors.css";
+
+.schedule {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(240, 243, 246);
+  font-family: "fuseRegular";
+  margin-top: 150px;
+}
+
+.schedule__header {
+  height: 48px;
+  width: 172px;
+  color: var(--color-blue);
+  font-family: "fuseBold";
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 48px;
+  text-align: center;
+}
+
+.days-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.first-day {
+  margin: 20px;
+  height: 65px;
+  width: 80px;
+  border-radius: 15px;
+  background-color: var(--color-cyan);
+  box-shadow: 10px 10px 20px 0 rgba(55, 84, 170, 0.1),
+    -10px -10px 20px 0 rgba(255, 255, 255, 0.8);
+}
+
+.first-day__number {
+  margin-top: 10px;
+  color: var(--color-silver);
+  font-size: 20px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.first-day__text {
+  margin-top: -20px;
+  color: var(--color-silver);
+  font-size: 15px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.second-day {
+  margin: 20px;
+  height: 65px;
+  width: 80px;
+  border-radius: 15px;
+  background-color: var(--color-grey-blue);
+  box-shadow: 10px 10px 20px 0 rgba(55, 84, 170, 0.05),
+    -10px -10px 20px 0 rgba(255, 255, 255, 0.6);
+}
+
+.second-day__number {
+  margin-top: 10px;
+  color: var(--color-cyan);
+  font-size: 20px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.second-day__text {
+  margin-top: -20px;
+  color: var(--color-cyan);
+  font-size: 15px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.event-types {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  width: 100%;
+  font-family: "fuseBold";
+}
+
+.event-types__lectures {
+  position: relative;
+  z-index: 1;
+  color: var(--color-blue);
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+}
+
+.event-types__lectures::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 22px;
+  left: 0px;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-cyan);
+}
+
+.event-types__works,
+.event-types__campfire_talks {
+  color: var(--color-grey);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 36px;
+  text-align: center;
+}
+
+.schedule__lectures-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.lecture {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  width: 85%;
+  border-radius: 12px;
+  background-color: var(--color-silver);
+  box-shadow: inset 4px 4px 10px 0 rgba(255, 255, 255, 0.5),
+    -10px -10px 10px 0 rgba(255, 255, 255, 0.8),
+    10px 10px 10px 0 rgba(55, 84, 170, 0.05);
+}
+
+.lecture--basic {
+  flex-direction: row;
+  background-color: none;
+  box-shadow: none;
+}
+
+.lecture:hover {
+  animation: float 3s infinite ease-in-out;
+}
+
+.lecture__time {
+  margin-left: 10px;
+  color: var(--color-grey);
+  font-size: 14px;
+  min-width: 90px;
+}
+
+.lecture__time--green {
+  color: var(--color-cyan);
+}
+
+.lecture-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.lecture__field {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -10px;
+  left: 100px;
+  width: fit-content;
+  width: -moz-fit-content;
+  font-family: "fuseBold";
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.lecture__field::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 13px;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-cyan);
+}
+
+.lecture__active {
+  position: relative;
+  top: -1px;
+  left: 130px;
+}
+
+.lecture__active--animation {
+  position: absolute;
+  animation: pulse 1.5s infinite;
+}
+
+.lecture__active--animation-background {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+}
+
+.lecture__active--text {
+  position: absolute;
+  top: -16px;
+  left: 15px;
+  color: var(--color-red);
+  font-family: "fuseBold";
+  font-size: 12px;
+}
+
+.lecture__name {
+  color: var(--color-grey);
+  font-size: 12px;
+  width: 100%;
+  line-height: 18px;
+}
+
+.lecture__name--green {
+  color: var(--color-cyan);
+}
+
+.lecture__name--basic {
+  font-size: 14px;
+  font-family: "fuseBold";
+}
+
+.lecture__name--bold {
+  color: rgb(27, 60, 68);
+  font-family: "fuseBold";
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.lecture__description-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.lecture__description {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 10px;
+}
+
+.lecture__description--text {
+  color: var(--color-blue);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.emanuel-milicevic-photo {
+  position: absolute;
+  left: -75px;
+  bottom: -50px;
+  transform: scale(0.5);
+}
+
+.check_lecture {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.check_lecture--text {
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color-blue);
+  font-size: 13px;
+}
+
+.check_lecture--text::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 13px;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-cyan);
+}
+
+.arrow-right {
+  margin-left: 5px;
+}
+
+@keyframes float {
+  from {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, -15px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .schedule {
+    margin-top: 200px;
+  }
+
+  .schedule__header {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .first-day {
+    margin-right: 30px;
+    height: 91px;
+    width: 111.22px;
+    box-shadow: 10px 10px 20px 0 rgba(55, 84, 170, 0.1),
+      -10px -10px 20px 0 rgba(255, 255, 255, 0.8);
+    line-height: 21px;
+  }
+
+  .second-day {
+    margin-left: 30px;
+    height: 91px;
+    width: 111.22px;
+    box-shadow: 10px 10px 20px 0 rgba(55, 84, 170, 0.05),
+      -10px -10px 20px 0 rgba(255, 255, 255, 0.6);
+    line-height: 21px;
+  }
+
+  .first-day__number,
+  .second-day__number {
+    margin-top: 20px;
+    font-size: 36px;
+  }
+
+  .first-day__text,
+  .second-day__text {
+    font-size: 18px;
+  }
+
+  .event-types {
+    margin-top: 50px;
+    max-width: 1200px;
+  }
+
+  .event-types__lectures,
+  .event-types__works,
+  .event-types__campfire_talks {
+    font-size: 30px;
+  }
+
+  .event-types__lectures::after {
+    top: 30px;
+    height: 6px;
+  }
+
+  .schedule-container {
+    margin-top: 50px;
+  }
+
+  .lecture {
+    max-width: 1350px;
+  }
+
+  .lecture__time {
+    margin-top: 5px;
+    font-size: 20px;
+    min-width: 120px;
+  }
+
+  .lecture__time--basic {
+    margin-top: 25px;
+  }
+
+  .lecture__field {
+    margin-left: 30px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .lecture__field::after {
+    top: 20px;
+    height: 4px;
+  }
+
+  .lecture__active {
+    left: 180px;
+    top: -7px;
+  }
+
+  .lecture__active--animation {
+    height: 10px;
+    width: 10px;
+  }
+
+  .lecture__active--animation-background {
+    top: -5px;
+    left: -5px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .lecture__active--text {
+    top: -20px;
+    left: 20px;
+    font-size: 16px;
+  }
+
+  .lecture-container {
+    width: 90%;
+  }
+
+  .lecture-container::before {
+    content: url(../images/Strelica-Siva.svg);
+    position: absolute;
+    right: calc(20px - 10%);
+  }
+
+  .lecture-container--green::before {
+    content: url(../images/Strelica-Zelelna.svg);
+    position: absolute;
+    right: calc(20px - 10%);
+  }
+
+  .lecture-container--opened::before {
+    transform: rotate(180deg);
+  }
+
+  .lecture__description-container {
+    margin-left: 180px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .lecture__name,
+  .check_lecture--text,
+  .lecture__description--text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .lecture__name--basic,
+  .lecture__name--bold {
+    font-size: 24px;
+  }
+
+  .emanuel-milicevic-photo {
+    left: -110px;
+    transform: scale(1);
+  }
+
+  .lecture__description--text {
+    max-width: 930px;
+  }
+
+  .check_lecture--text::after {
+    top: 18px;
+    height: 4px;
+  }
+}
