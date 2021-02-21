@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "fuseRegular";
+  src: url(../fonts/FuseV.2Display-Regular.otf);
+}
+
+@font-face {
+  font-family: "fuseBold";
+  src: url(../fonts/FuseV.2Display-Bold.otf);
+}
