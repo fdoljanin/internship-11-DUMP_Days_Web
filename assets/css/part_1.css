@@ -64,6 +64,15 @@ body {
     justify-content: space-between;
     position: relative;
 }
+/* 
+.navbar-options {
+    display: block;
+    position:static;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 3;
+} */
 
 .hamburger div {
     width: 100%;
@@ -111,6 +120,16 @@ body {
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 0;
+}
+
+.main__header-buttons button:nth-child(1){
+    color: white;
+}
+
+.main__header-buttons button:nth-child(2) {
+    color: #5EC4BC;
+    background-color: transparent;
+    box-shadow: none;
 }
 
 .main__header-learn__more {
@@ -179,35 +198,6 @@ body {
     opacity: 0.3;
 }
 
-.navbar input {
-    appearance: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.navbar input:checked {
-    appearance: none;
-    border: none;
-}
-
-.navbar input + navbar-options {
-    display: none;
-    z-index: 2;
-}
-
-.navbar input:hover + navbar-options{
-    display: block;
-    position: static;
-    background-color: white;
-    width: 100vw;
-    height: 100vh;
-}
 
 @media screen and (min-width: 768px) {
     .logo-mobile, .hamburger {
