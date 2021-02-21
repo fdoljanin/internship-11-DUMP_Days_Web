@@ -1,28 +1,17 @@
-@font-face {
-  font-family: "Fuse V.2 Display";
-  src: url("src/FuseV.2Display-Bold.c8091973.otf") format("truetype");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Fuse V.2 Display Regular";
-  src: url("src/FuseV.2Display-Regular.2b6a1efd.otf") format("truetype");
-  font-weight: 500;
-}
+@import "fonts.css";
 
 :root {
   --slideshow-width: 886px;
 }
 
-body {
-  background: #f1f3f6;
-  margin:0;
+.past {
+  margin-top: 150px;
 }
 
 .past-title {
   width: 185px;
-  color: #1A3C44;
-  font-family: "Fuse V.2 Display";
+  color: #1a3c44;
+  font-family: "fuseBold";
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 0;
@@ -30,7 +19,6 @@ body {
   text-align: center;
   margin: 0 auto 50px auto;
 }
-
 
 .break {
   display: flex;
@@ -46,7 +34,7 @@ body {
 
 .break-year {
   color: #1a3c44;
-  font-family: "Fuse V.2 Display";
+  font-family: "fuseBold";
   font-size: 22px;
   line-height: 30px;
   margin: 10px 0 0 0;
@@ -80,14 +68,12 @@ body {
 
 .slideshow {
   display: flex;
-  /*width: max-content;*/
 }
 
 .slideshow-photos {
   display: flex;
   flex-direction: column;
   margin: 18px -6px;
-  /*width: max-content;*/
   width: 850px;
 }
 
@@ -114,28 +100,25 @@ body {
     -30px -30px 80px 0 #ffffff, 30px 30px 80px 0 rgba(55, 84, 170, 0.1);
 }
 
-
 .slideshow-text {
   width: 100px;
   color: #5ec4bc;
-  font-family: "Fuse V.2 Display";
+  font-family: "fuseBold";
   font-size: 16px;
   text-align: center;
 }
 
-
-
-/*.slideshow:nth-of-type(1) {
+.slideshow:nth-of-type(1) {
   animation: slide1 40s linear infinite;
 }
 
 .slideshow:nth-of-type(2) {
   animation: slide2 40s linear infinite;
-}*/
+}
 
 .slides {
   display: flex;
-  overflow: hidden;
+  overflow: visible;
 }
 
 @keyframes slide1 {
@@ -237,7 +220,7 @@ body {
     height: 730px;
     background-size: 4px 45px;
   }
-  .slideshow-row{
+  .slideshow-row {
     margin-bottom: 50px;
   }
   .slideshow-photos {
@@ -282,7 +265,7 @@ body {
   height: 44px;
   width: 267px;
   color: #7a8e94;
-  font-family: "Fuse V.2 Display Regular";
+  font-family: "fuseRegular";
   font-size: 14px;
   letter-spacing: 0;
   line-height: 22px;
@@ -302,7 +285,7 @@ body {
   box-shadow: 0 5px 10px 0 rgba(39, 199, 189, 0.35);
 
   color: #f1f3f6;
-  font-family: "Fuse V.2 Display";
+  font-family: "fuseBold";
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0;
@@ -313,14 +296,13 @@ body {
 .app-button--transparent {
   background-color: rgba(1, 1, 1, 0);
   box-shadow: none;
-
   color: #5ec4bc;
 }
 
 .app-title {
   max-width: 331px;
   color: #1a3c44;
-  font-family: "Fuse V.2 Display";
+  font-family: "fuseBold";
   font-size: 28px;
   font-weight: bold;
   line-height: 38px;
@@ -355,7 +337,7 @@ body {
     background-size: 530px;
   }
   .app-container {
-    margin-left:50px;
+    margin-left: 50px;
   }
 }
 
@@ -381,7 +363,7 @@ body {
 .question-title {
   margin: 0;
   color: #1a3c44;
-  font-family: "Fuse V.2 Display";
+  font-family: "fuseBold";
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 0;
@@ -391,7 +373,7 @@ body {
 .question-text {
   margin: 10px 0 20px 0;
   color: #7a8e94;
-  font-family: "Fuse V.2 Display Regular";
+  font-family: "fuseRegular";
   font-size: 14px;
   letter-spacing: 0;
   line-height: 22px;
@@ -417,7 +399,7 @@ body {
 
 .question-option {
   color: #f1f3f6;
-  font-family: "Fuse V.2 Display";
+  font-family: "fuseBold";
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0;
@@ -502,7 +484,7 @@ footer {
 
 .copyright-text {
   color: #7a8e94;
-  font-family: "Fuse V.2 Display Regular";
+  font-family: "fuseRegular";
   font-size: 12px;
   margin: 0 0 9px 0;
 }
