@@ -39,9 +39,13 @@ body {
     align-items: center;
 }
 
+.navbar li:hover {
+    border-bottom: #5EC4BC 5px solid;
+}
+
 .navbar li {
     font-size: 16px;
-    padding-right: 5%;
+    margin-right: 5%;
 }
 
 .logo-mobile {
@@ -130,6 +134,11 @@ body {
     color: #5EC4BC;
     background-color: transparent;
     box-shadow: none;
+}
+
+.main__header-buttons a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .main__header-learn__more {
